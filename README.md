@@ -1,5 +1,8 @@
+#车道线分割
+
 #LaneNet: Real-Time Lane Detection Networks for Autonomous Driving
 @LaneNet with Own Dataset
+
 #LaneNet教程：lanenet用于自动驾驶的实时车道检测网络
 
    受语义分割和实例分割任务中dense预测的启发，将车道检测问题转为实例分割问题，每个车道线形成独立的实例，但都属于车道线这个类别。我们设计了一个带分支结构的多任务网络，如车道实例分割，由一个车道分割分支和一个车道embedding分支构成能够实现端到端训练。车道分割分支输出两类：背景或车道线；车道embedding分支进一步将分割后得到的车道线分离成不同车道实例。
